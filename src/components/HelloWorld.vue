@@ -46,6 +46,8 @@ export default {
           localStorage.setItem("vue-token", keycloak.token)
           localStorage.setItem("vue-refresh-token", keycloak.refreshToken)
 
+          this.getData()
+
       }).error(() =>{
         console.log("Authenticated Failed")
       });
